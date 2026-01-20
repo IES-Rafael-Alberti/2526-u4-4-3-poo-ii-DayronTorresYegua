@@ -1,0 +1,15 @@
+2026-01-20 10:16:57 DEBUG MiAplicacion - Mensaje DEBUG
+2026-01-20 10:16:57 INFO  MiAplicacion - Mensaje INFO
+2026-01-20 10:16:57 WARN  MiAplicacion - Mensaje WARN
+2026-01-20 10:16:57 ERROR MiAplicacion - Mensaje ERROR
+2026-01-20 10:18:08 TRACE MiAplicacion - Mensaje TRACE
+2026-01-20 10:18:08 DEBUG MiAplicacion - Mensaje DEBUG
+2026-01-20 10:18:08 INFO  MiAplicacion - Mensaje INFO
+2026-01-20 10:18:08 WARN  MiAplicacion - Mensaje WARN
+2026-01-20 10:18:08 ERROR MiAplicacion - Mensaje ERROR
+2026-01-20 10:18:30 ERROR MiAplicacion - Mensaje ERROR
+2026-01-20 10:22:25 TRACE MiAplicacion - Mensaje TRACE
+2026-01-20 10:22:25 DEBUG MiAplicacion - Mensaje DEBUG
+2026-01-20 10:22:25 INFO  MiAplicacion - Mensaje INFO
+2026-01-20 10:22:25 WARN  MiAplicacion - Mensaje WARN
+2026-01-20 10:22:25 ERROR MiAplicacion - Mensaje ERROR
