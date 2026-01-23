@@ -1,16 +1,53 @@
 package org.iesra
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+import org.slf4j.LoggerFactory
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
+val logger = LoggerFactory.getLogger("MiAplicacion")
+
+fun main() {
+
+    /*
+    val persona1 = Persona(0, "12345678A")
+
+    val cuenta1 = Cuenta(1, 0.0)
+    val cuenta2 = Cuenta(2, 700.0)
+
+    persona1.aniadirCuenta(cuenta1)
+    persona1.aniadirCuenta(cuenta2)
+
+    cuenta1.recibirAbonos(1100.0)
+    cuenta2.realizarPagos(750.0)
+
+    logger.info("¿La persona es morosa? :  ${Cuenta.esMorosa(persona1)}")
+
+    try {
+        val transferencia = Cuenta.transeferencia(persona1, 1, persona1, 2, 1000.0)
+        logger.info("Transferencia exitosa")
+    } catch (e: IllegalArgumentException) {
+        logger.error("Transferencia falló: ${e.message}")
     }
+
+    logger.info("¿La persona es morosa? :  ${Cuenta.esMorosa(persona1)}")
+
+    logger.info("${cuenta1.saldo}")
+    logger.info("${cuenta2.saldo}")
+    */
+
+    val libro = Libro("Hola", "Yo", 2000, 7)
+    val libro2 = Libro("Adios", "Tu", 1250, 9)
+    val libro3 = Libro("Hola", "El", 1000, 5)
+
+    val estanteria = ConjuntoLibros(15)
+
+    estanteria.aniadirLibro(libro)
+    estanteria.aniadirLibro(libro2)
+
+    estanteria.eliminarLibroPorAutor("Yo")
+    estanteria.eliminarLibroPorTitulo("Adios")
+
+    estanteria.aniadirLibro(libro3)
+
+    logger.info("La estanteria contiene los siguientes libros:\n$estanteria")
+
+
 }
