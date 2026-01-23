@@ -6,7 +6,7 @@ val logger = LoggerFactory.getLogger("MiAplicacion")
 
 fun main() {
 
-
+    /*
     val persona1 = Persona(0, "12345678A")
 
     val cuenta1 = Cuenta(1, 0.0)
@@ -31,5 +31,23 @@ fun main() {
 
     logger.info("${cuenta1.saldo}")
     logger.info("${cuenta2.saldo}")
+    */
+
+    val libro = Libro("Hola", "Yo", 2000, 7)
+    val libro2 = Libro("Adios", "Tu", 1250, 9)
+    val libro3 = Libro("Hola", "El", 1000, 5)
+
+    val estanteria = ConjuntoLibros(15)
+
+    estanteria.aniadirLibro(libro)
+    estanteria.aniadirLibro(libro2)
+
+    estanteria.eliminarLibroPorAutor("Yo")
+    estanteria.eliminarLibroPorTitulo("Adios")
+
+    estanteria.aniadirLibro(libro3)
+
+    logger.info("La estanteria contiene los siguientes libros:\n$estanteria")
+
 
 }
